@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <nav>
+            <ul>
+                <li><a href="#">Hjem</a></li>
+                <li><a href="#">Produkter</a></li>
+                <li><a href="#">Kategorier</a></li>
+                <li><a href="#">Kontakt oss</a></li>
+            </ul>
+        </nav>
+        <input type="search" placeholder="Søk her...">
+        <a href="#" class="cart">🛒</a>
+    </header>
+
+    <!-- Kasse-seksjon -->
+    <main>
+        <!-- Handlekurv -->
+        <section id="shopping-bag">
+            <h1>1. SHOPPINGBAGEN DIN</h1>
+            <article class="product-item">
+                <img src="https://picsum.photos/300" alt="Produktbilde">
+                <div>
+                    <h2>PRODUCT NAME</h2>
+                    <p>kr 1999</p>
+                    <p>Farge: Beige</p>
+                </div>
+            </article>
+            <article class="product-item">
+                <img src="https://picsum.photos/300" alt="Produktbilde">
+                <div>
+                    <h2>PRODUCT NAME</h2>
+                    <p>kr 1999</p>
+                    <p>Farge: Beige</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Kundens opplysninger -->
+        <section id="customer-info">
+            <h1>2. DINE OPPLYSNINGER</h1>
+            <form>
+                <label for="firstname">Fornavn*</label>
+                <input type="text" id="firstname" name="firstname" required>
+                
+                <label for="lastname">Etternavn*</label>
+                <input type="text" id="lastname" name="lastname" required>
+                
+                <label for="address">Gataadresse*</label>
+                <input type="text" id="address" name="address" required>
+                
+                <label for="postalcode">Postnummer*</label>
+                <input type="text" id="postalcode" name="postalcode" required>
+                
+                <button type="submit">Lagre</button>
+                <a href="#" class="cancel">Avbryt</a>
+            </form>
+        </section>
+
+        <!-- Levering -->
+        <section id="delivery">
+            <h1>3. LEVERING</h1>
+            <form>
+                <label>
+                    <input type="radio" name="delivery" value="express" checked>
+                    Express Hjemlevering
+                </label>
+                <label>
+                    <input type="radio" name="delivery" value="pickup">
+                    Express Pakke til utleveringssted
+                </label>
+                <label>
+                    <input type="radio" name="delivery" value="standard">
+                    Standard Hjemlevering
+                </label>
+            </form>
+        </section>
+
+        <!-- Betaling -->
+        <section id="payment">
+            <h1>4. BETALING</h1>
+            <form>
+                <label for="card-number">Kortnummer</label>
+                <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
+                
+                <label for="expiry">Utløpsdato</label>
+                <input type="text" id="expiry" name="expiry" placeholder="mm / åååå" required>
+                
+                <label for="cvc">CVC/CVV</label>
+                <input type="text" id="cvc" name="cvc" placeholder="123" required>
+                
+                <p>Å betale inkl. mva: kr 1999</p>
+                <button type="submit">Fullfør kjøp</button>
+            </form>
+        </section>
+
+        <!-- Vilkår -->
+        <section id="terms">
+            <p>Du bekrefter herved at opplysningene du har oppgitt er korrekte...</p>
+            <label>
+                <input type="checkbox" name="newsletter">
+                La takk! Send nyhetsbrev til meg.
+            </label>
+            <label>
+                <input type="checkbox" name="offers">
+                Jeg ønsker å motta tilbud og nyheter.
+            </label>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <section>
+            <h3>Logo</h3>
+            <p>At vero eos et accusamus...</p>
+        </section>
+        <section>
+            <h3>Kontakt</h3>
+            <ul>
+                <li>Adresse: B R A Veien 1, 1757 Halden</li>
+                <li>Telefon: 66 80 80 80</li>
+                <li>E-post: halden@butikk.no</li>
+                <li>Åpningstider: Stenger: 15:00</li>
+            </ul>
+        </section>
+        <section class="social-media">
+            <h3>Sosiale medier</h3>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>
