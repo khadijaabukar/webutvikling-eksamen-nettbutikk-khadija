@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produktside</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Logo</a>
+      <ul>
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="index.html#produkter">Produkter</a></li>
+        <li><a href="index.html#kategorier">Kategorier</a></li>
+        <li><a href="index.html#kontakt">Kontakt oss</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Brødsmulesti -->
+    <nav aria-label="breadcrumb">
+      <ol>
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="#">Kategori</a></li>
+        <li aria-current="page">Produktnavn</li>
+      </ol>
+    </nav>
+
+    <!-- Produktseksjon -->
+    <section class="product">
+      <div class="product-images">
+        <img src="https://via.placeholder.com/500" alt="Stort produktbilde">
+        <div class="thumbnails">
+          <img src="https://via.placeholder.com/100" alt="Produktbilde 1">
+          <img src="https://via.placeholder.com/100" alt="Produktbilde 2">
+          <img src="https://via.placeholder.com/100" alt="Produktbilde 3">
+        </div>
+      </div>
+      <div class="product-details">
+        <h1>Produktnavn</h1>
+        <p><strong>Merke:</strong> Merkenavn</p>
+        <p><strong>Pris:</strong> 5 195 kr inkl. mva.</p>
+        <p><strong>Farge:</strong> Beige</p>
+        <label for="size">Velg størrelse:</label>
+        <select id="size">
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+        </select>
+        <button>Legg i handlekurv</button>
+        <button>❤️</button>
+      </div>
+    </section>
+
+    <!-- Lignende produkter -->
+    <section class="related-products">
+      <h2>Lignende produkter</h2>
+      <ul>
+        <li>
+          <img src="https://via.placeholder.com/200" alt="Produktbilde">
+          <h3>Product Name</h3>
+          <p>Kr 1999</p>
+          <p>⭐⭐⭐⭐⭐ 842 Reviews</p>
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/200" alt="Produktbilde">
+          <h3>Product Name</h3>
+          <p>Kr 1999</p>
+          <p>⭐⭐⭐⭐⭐ 842 Reviews</p>
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/200" alt="Produktbilde">
+          <h3>Product Name</h3>
+          <p>Kr 1999</p>
+          <p>⭐⭐⭐⭐⭐ 842 Reviews</p>
+        </li>
+      </ul>
+      <a href="#">Se flere lignende produkter →</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Kontakt oss: kontakt@nettbutikk.no</p>
+    <p>Adresse: B R A Veien 4, 1757 Halden</p>
+  </footer>
+</body>
+</html>
