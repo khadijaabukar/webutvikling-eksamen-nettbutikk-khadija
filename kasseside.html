@@ -5,79 +5,121 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kasseside</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="ikoner/css/all.css">
+  <link rel="stylesheet" href="ikoner/css/brands.css">
+  <link rel="stylesheet" href="ikoner/css/solid.css">
 </head>
 <body>
   <header>
     <nav>
-      <a href="index.html">Logo</a>
-      <ul>
+      <a href="index.html" class="logo">Logo</a>
+      <ul class="nav-links">
         <li><a href="index.html">Hjem</a></li>
         <li><a href="index.html#produkter">Produkter</a></li>
         <li><a href="index.html#kategorier">Kategorier</a></li>
         <li><a href="index.html#kontakt">Kontakt oss</a></li>
       </ul>
+      <form class="search-cart">
+        <input type="text" placeholder="Søk her">
+        <button type="submit" aria-label="Søk"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button aria-label="Handlekurv"><i class="fa-solid fa-cart-shopping"></i></button>
+        <button aria-label="Brukerkonto"><i class="fa-solid fa-user"></i></button>
+        <button aria-label="Favoritter"><i class="fa-regular fa-heart"></i></button>
+      </form>
     </nav>
   </header>
 
   <main>
     <h1>Kasse</h1>
     
-    <!-- Seksjon 1: Handlekurv -->
+    <!-- Handlekurv -->
     <section>
       <h2>1. Shoppingbagen din</h2>
-      <ul>
+      <ul class="shopping-bag">
         <li>
-          <img src="https://via.placeholder.com/150" alt="Produktbilde">
-          <p>Produktnavn</p>
+          <img src="https://picsum.photos/id/2/150/150" alt="Produktbilde">
+          <p>Produktnavn 1</p>
           <p>Kr 1999</p>
-          <label for="size">Størrelse:</label>
-          <select id="size">
+          <label for="size1">Størrelse:</label>
+          <select id="size1">
             <option value="S">S</option>
             <option value="M">M</option>
             <option value="L">L</option>
           </select>
-          <label for="quantity">Antall:</label>
-          <input type="number" id="quantity" value="1" min="1">
+          <label for="quantity1">Antall:</label>
+          <input type="number" id="quantity1" value="1" min="1">
+          <button aria-label="Fjern produkt"><i class="fa-solid fa-trash"></i></button>
+          <button arial-label="Favoritter"><i class="fa-regular fa-heart"></i></button>
+        </li>
+        <li>
+          <img src="https://picsum.photos/id/2/150/150" alt="Produktbilde">
+          <p>Produktnavn 2</p>
+          <p>Kr 1599</p>
+          <label for="size2">Størrelse:</label>
+          <select id="size2">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <label for="quantity2">Antall:</label>
+          <input type="number" id="quantity2" value="1" min="1">
+          <button aria-label="Fjern produkt"><i class="fa-solid fa-trash"></i></button>
+          <button arial-label="Favoritter"><i class="fa-regular fa-heart"></i></button>
+        </li>
+        <li>
+          <img src="https://picsum.photos/id/2/150/150" alt="Produktbilde">
+          <p>Produktnavn 3</p>
+          <p>Kr 1799</p>
+          <label for="size3">Størrelse:</label>
+          <select id="size3">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <label for="quantity3">Antall:</label>
+          <input type="number" id="quantity3" value="1" min="1">
+          <button aria-label="Fjern produkt"><i class="fa-solid fa-trash"></i></button>
+          <button arial-label="Favoritter"><i class="fa-regular fa-heart"></i></button>
         </li>
       </ul>
     </section>
 
-    <!-- Seksjon 2: Personopplysninger -->
+    <!-- Personopplysninger -->
     <section>
       <h2>2. Dine opplysninger</h2>
-      <form>
+      <form class="personal-info">
         <label for="first-name">Fornavn:</label>
         <input type="text" id="first-name" required>
-        
+
         <label for="last-name">Etternavn:</label>
         <input type="text" id="last-name" required>
-        
+
         <label for="address">Gateadresse:</label>
         <input type="text" id="address" required>
-        
+
         <label for="postcode">Postnummer:</label>
         <input type="text" id="postcode" required>
-        
+
         <label for="city">Poststed:</label>
         <input type="text" id="city" required>
-        
+
         <label for="email">E-post:</label>
         <input type="email" id="email" required>
-        
+
         <label for="phone">Telefon:</label>
         <input type="tel" id="phone" required>
-        
+
         <button type="submit">Lagre</button>
-        <a href="#">Avbryt</a>
+        <a href="#" class="cancel">Avbryt</a>
       </form>
     </section>
 
-    <!-- Seksjon 3: Levering -->
+    <!-- Levering -->
     <section>
       <h2>3. Levering</h2>
-      <form>
+      <form class="delivery-options">
         <label>
-          <input type="radio" name="delivery" value="express-home">
+          <input type="radio" name="delivery" value="express-home" required>
           Express hjemlevering (3-4 virkedager)
         </label>
         <label>
@@ -91,10 +133,10 @@
       </form>
     </section>
 
-    <!-- Seksjon 4: Betaling -->
+    <!-- Betaling -->
     <section>
       <h2>4. Betaling</h2>
-      <form>
+      <form class="payment-form">
         <label for="card-number">Kortnummer:</label>
         <input type="text" id="card-number" required>
 
@@ -117,8 +159,44 @@
   </main>
 
   <footer>
-    <p>Kontakt oss: kontakt@nettbutikk.no</p>
-    <p>Adresse: B R A Veien 4, 1757 Halden</p>
+    <section>
+      <h4>Kontakt</h4>
+      <p>E-post: kontakt@nettbutikk.no</p>
+      <p>Adresse: B R A Veien 4, 1757 Halden</p>
+    </section>
+    <section>
+      <h4>Snarveier</h4>
+      <ul>
+        <li><a href="#">Produkter</a></li>
+        <li><a href="#">Kategorier</a></li>
+        <li><a href="#">Kontakt oss</a></li>
+      </ul>
+    </section>
+    <section>
+      <h4>Sosiale medier</h4>
+      <ul>
+        <li>
+          <button aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </button>
+        </li>
+        <li>
+          <button aria-label="Facebook">
+            <i class="fa-brands fa-facebook"></i>
+          </button>
+        </li>
+        <li>
+          <button aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </button>
+        </li>
+        <li>
+          <button aria-label="Pinterest">
+            <i class="fa-brands fa-pinterest"></i>
+          </button>
+        </li>
+      </ul>
+    </section>
   </footer>
 </body>
 </html>

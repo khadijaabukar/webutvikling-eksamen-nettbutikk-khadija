@@ -5,25 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nettbutikk - Forside</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="ikoner/css/all.css">
+  <link rel="stylesheet" href="ikoner/css/brands.css">
+  <link rel="stylesheet" href="ikoner/css/solid.css">
 </head>
 <body>
   <header>
     <nav class="header">
       <span class="logo">Logo</span>
       <ul class="nav-links">
-        <li><a href="#">Hjem</a></li>
         <li><a href="#">Produkter</a></li>
         <li><a href="#">Kategorier</a></li>
         <li><a href="#">Kontakt oss</a></li>
       </ul>
       <form class="search-cart">
         <input type="text" placeholder="Søk her">
-        <button type="submit">🔍</button>
-        <button>🛒</button>
-        <button>👤</button>
+        <button type="submit" aria-label="Søk"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button aria-label="Handlekurv"><i class="fa-solid fa-cart-shopping"></i></button>
+        <button aria-label="Brukerkonto"><i class="fa-solid fa-user"></i></button>
+        <button aria-label="Favoritter"><i class="fa-regular fa-heart"></i></button>
       </form>
     </nav>
   </header>
+  
 
   <main>
     <section class="hero">
@@ -41,61 +45,231 @@
       </ul>
       <ul class="product-grid">
         <li class="product">
-          <img src="https://via.placeholder.com/200" alt="Produkt">
-          <h3>Product Name</h3>
+          <img src="https://picsum.photos/id/1/200/300" alt="Produkt 1">
+          <h3>Produktnavn 1</h3>
           <p>Kr 1999</p>
-          <p>⭐⭐⭐⭐⭐ 842 Reviews</p>
+          <p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            842 Reviews
+          </p>
         </li>
         <li class="product">
-          <img src="https://via.placeholder.com/200" alt="Produkt">
-          <h3>Product Name</h3>
-          <p>Kr 1999</p>
-          <p>⭐⭐⭐⭐⭐ 842 Reviews</p>
+          <img src="https://picsum.photos/id/1/200/300" alt="Produkt 2">
+          <h3>Produktnavn 2</h3>
+          <p>Kr 1799</p>
+          <p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            734 Reviews
+          </p>
         </li>
         <li class="product">
-          <img src="https://via.placeholder.com/200" alt="Produkt">
-          <h3>Product Name</h3>
-          <p>Kr 1999</p>
-          <p>⭐⭐⭐⭐⭐ 842 Reviews</p>
+          <img src="https://picsum.photos/id/1/200/300" alt="Produkt 3">
+          <h3>Produktnavn 3</h3>
+          <p>Kr 1499</p>
+          <p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            620 Reviews
+          </p>
+        </li>
+        <li class="product">
+          <img src="https://picsum.photos/id/1/200/300" alt="Produkt 4">
+          <h3>Produktnavn 4</h3>
+          <p>Kr 1899</p>
+          <p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            910 Reviews
+          </p>
+        </li>
+        <li class="product">
+          <img src="https://picsum.photos/id/1/200/300" alt="Produkt 5">
+          <h3>Produktnavn 5</h3>
+          <p>Kr 1599</p>
+          <p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            802 Reviews
+          </p>
+        </li>
+        <li class="product">
+          <img src="https://picsum.photos/id/1/200/300" alt="Produkt 6">
+          <h3>Produktnavn 6</h3>
+          <p>Kr 1699</p>
+          <p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            450 Reviews
+          </p>
         </li>
       </ul>
     </section>
-
+    
     <section>
       <h2>Våre mest populære kategorier</h2>
       <ul class="categories-grid">
-        <li>Category 1</li>
-        <li>Category 2</li>
-        <li>Category 3</li>
-        <li>Category 4</li>
-        <li>Category 5</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Anmeldelser</h2>
-      <ul class="review-grid">
-        <li class="review">
-          <h3>Rober Labrador</h3>
-          <p>⭐⭐⭐⭐</p>
-          <p>Nam libero tempore, cum soluta nobis...</p>
-        </li>
-        <li class="review">
-          <h3>Rober Labrador</h3>
-          <p>⭐⭐⭐⭐</p>
-          <p>Nam libero tempore, cum soluta nobis...</p>
-        </li>
-      </ul>
-    </section>
+        <section>
+            <li>
+              <img src="https://picsum.photos/id/101/200/300" alt="Kategori 1">
+              <p>Kategori 1</p>
+            </li>
+            <li>
+              <img src="https://picsum.photos/id/102/200/300" alt="Kategori 2">
+              <p>Kategori 2</p>
+            </li>
+            <li>
+              <img src="https://picsum.photos/id/103/200/300" alt="Kategori 3">
+              <p>Kategori 3</p>
+            </li>
+            <li>
+              <img src="https://picsum.photos/id/104/200/300" alt="Kategori 4">
+              <p>Kategori 4</p>
+            </li>
+            <li>
+              <img src="https://picsum.photos/id/105/200/300" alt="Kategori 5">
+              <p>Kategori 5</p>
+            </li>
+            <li>
+              <img src="https://picsum.photos/id/106/200/300" alt="Kategori 6">
+              <p>Kategori 6</p>
+            </li>
+          </ul>
+        </section>
+        
+        <h2>Anmeldelser</h2>
+        <ul class="review-grid">
+          <li class="review">
+            <img src="https://picsum.photos/id/237/200/300" alt="Bilde av Rober Labrador">
+            <h3>Rober Labrador</h3>
+            <p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </p>
+            <p>Nam libero tempore, cum soluta nobis...</p>
+          </li>
+          <li class="review">
+            <img src="https://picsum.photos/id/237/200/300" alt="Bilde av Anna Collie">
+            <h3>Anna Collie</h3>
+            <p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </p>
+            <p>Optio cumque nihil impedit quo minus id...</p>
+          </li>
+          <li class="review">
+            <img src="https://picsum.photos/id/237/200/300" alt="Bilde av Max Beagle">
+            <h3>Max Beagle</h3>
+            <p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </p>
+            <p>Duis aute irure dolor in reprehenderit...</p>
+          </li>
+          <li class="review">
+            <img src="https://picsum.photos/id/237/200/300" alt="Bilde av Luna Husky">
+            <h3>Luna Husky</h3>
+            <p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </p>
+            <p>Excepteur sint occaecat cupidatat non proident...</p>
+          </li>
+        </ul>        
+    
   </main>
 
   <footer>
-    <address>
-      <p>Kontakt</p>
-      <p>Adresse: B R A Veien 4, 1757 Halden</p>
-      <p>Telefon: 69 60 80 00</p>
-      <p>E-post: halden@fro.no</p>
-    </address>
+    <section>
+      <!-- Logo og ingress -->
+      <header>
+        <h3>Logo</h3>
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+      </header>
+    </section>
+  
+    <section>
+      <!-- Kontaktinformasjon -->
+      <h4>Kontakt</h4>
+      <address>
+        <p><strong>Adresse:</strong> B R A Veien 4, 1757 Halden</p>
+        <p><strong>Telefon:</strong> 69 60 80 00</p>
+        <p><strong>E-post:</strong> <a href="mailto:halden@fro.no">halden@fro.no</a></p>
+        <p><strong>Åpningstider:</strong> Stenger 15:00</p>
+      </address>
+    </section>
+  
+    <section>
+      <!-- Snarveier -->
+      <h4>Snarveier</h4>
+      <nav>
+        <ul>
+          <li><a href="#">Produkter</a></li>
+          <li><a href="#">Kategorier</a></li>
+          <li><a href="#">Kontakt oss</a></li>
+        </ul>
+      </nav>
+    </section>
+  
+    <section>
+      <!-- Sosiale medier -->
+      <h4>Sosiale medier</h4>
+      <nav>
+        <ul>
+          <li>
+            <button aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </button>
+          </li>
+          <li>
+            <button aria-label="Facebook">
+              <i class="fa-brands fa-facebook"></i>
+            </button>
+          </li>
+          <li>
+            <button aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </button>
+          </li>
+          <li>
+            <button aria-label="Pinterest">
+              <i class="fa-brands fa-pinterest"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </section>
   </footer>
 </body>
 </html>
