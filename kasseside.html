@@ -118,34 +118,35 @@
     <section>
       <h2>3. Levering</h2>
       <form class="delivery-options">
-        <label>
-          <input type="radio" name="delivery" value="express-home" required>
-          Express hjemlevering (3-4 virkedager)
-        </label>
-        <label>
-          <input type="radio" name="delivery" value="express-pickup">
-          Express pakke til utleveringssted (1-3 virkedager)
-        </label>
-        <label>
-          <input type="radio" name="delivery" value="standard-home">
-          Standard hjemlevering (5-8 virkedager)
-        </label>
+        <button type="button" aria-label="Express hjemlevering">
+          <i class="fa-solid fa-truck-fast"></i> Express hjemlevering (3-4 virkedager)
+        </button>
+        <br>
+        <button type="button" aria-label="Express pakke til utleveringssted">
+          <i class="fa-brands fa-dhl"></i> Express pakke til utleveringssted (1-3 virkedager)
+        </button>
+        <br>
+        <button type="button" aria-label="Standard hjemlevering">
+          <i class="fa-solid fa-box"></i> Standard hjemlevering (5-8 virkedager)
+        </button>
       </form>
     </section>
 
-    <!-- Betaling -->
+    <!-- Seksjon 4: Betaling -->
     <section>
       <h2>4. Betaling</h2>
-      <form class="payment-form">
+      <form>
         <label for="card-number">Kortnummer:</label>
         <input type="text" id="card-number" required>
-
+        <i class="fa-solid fa-credit-card"></i>
+    
         <label for="expiry-date">Utløpsdato:</label>
         <input type="text" id="expiry-date" placeholder="mm/åå" required>
-
+        <i class="fa-regular fa-calendar"></i>
+    
         <label for="cvc">CVC/CVV:</label>
         <input type="text" id="cvc" required>
-
+    
         <p>Å betale: <strong>1 199 kr</strong></p>
         <button type="submit">Fullfør kjøp</button>
         <label>
@@ -155,9 +156,8 @@
           <input type="checkbox"> Send nyhetsbrev
         </label>
       </form>
-    </section>
+    </section>    
   </main>
-
   <footer>
     <section>
       <h4>Kontakt</h4>

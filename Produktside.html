@@ -12,8 +12,8 @@
 <body>
   <header>
     <nav>
-      <a href="index.html">Logo</a>
-      <ul>
+      <a href="index.html" class="logo">Logo</a>
+      <ul class="nav-links">
         <li><a href="index.html">Hjem</a></li>
         <li><a href="index.html#produkter">Produkter</a></li>
         <li><a href="index.html#kategorier">Kategorier</a></li>
@@ -40,61 +40,109 @@
     </nav>
 
     <!-- Produktseksjon -->
-    <section class="product">
-      <div class="product-images">
-        <img src="https://via.placeholder.com/500" alt="Stort produktbilde">
-        <div class="thumbnails">
-          <img src="https://via.placeholder.com/100" alt="Produktbilde 1">
-          <img src="https://via.placeholder.com/100" alt="Produktbilde 2">
-          <img src="https://via.placeholder.com/100" alt="Produktbilde 3">
-        </div>
-      </div>
-      <div class="product-details">
-        <h1>Produktnavn</h1>
-        <p><strong>Merke:</strong> Merkenavn</p>
-        <p><strong>Pris:</strong> 5 195 kr inkl. mva.</p>
-        <p><strong>Farge:</strong> Beige</p>
-        <label for="size">Velg størrelse:</label>
-        <select id="size">
-          <option value="S">S</option>
-          <option value="M">M</option>
-          <option value="L">L</option>
-        </select>
-        <button>Legg i handlekurv</button>
-        <button>❤️</button>
-      </div>
+    <section>
+      <h2>Produktseksjon</h2>
+      <ul class="product-grid">
+        <li>
+          <img src="https://picsum.photos/id/2/150/150" alt="Produktbilde">
+          <h3>Produktnavn 1</h3>
+          <p>5 195 kr inkl. mva.</p>
+          <button aria-label="Favoritter"><i class="fa-regular fa-heart"></i></button>
+        </li>
+        <li>
+          <img src="https://picsum.photos/id/2/150/150" alt="Produktbilde">
+          <h3>Produktnavn 2</h3>
+          <p>5 195 kr inkl. mva.</p>
+          <button aria-label="Favoritter"><i class="fa-regular fa-heart"></i></button>
+        </li>
+        <li>
+          <img src="https://picsum.photos/id/2/150/150" alt="Produktbilde">
+          <h3>Produktnavn 3</h3>
+          <p>5 195 kr inkl. mva.</p>
+          <button aria-label="Favoritter"><i class="fa-regular fa-heart"></i></button>
+        </li>
+        <li>
+          <img src="https://picsum.photos/id/2/150/150" alt="Produktbilde">
+          <h3>Produktnavn 4</h3>
+          <p>5 195 kr inkl. mva.</p>
+          <button aria-label="Favoritter"><i class="fa-regular fa-heart"></i></button>
+        </li>
+      </ul>
     </section>
 
     <!-- Lignende produkter -->
-    <section class="related-products">
+    <section>
       <h2>Lignende produkter</h2>
-      <ul>
+      <ul class="related-products-grid">
         <li>
-          <img src="https://via.placeholder.com/200" alt="Produktbilde">
-          <h3>Product Name</h3>
-          <p>Kr 1999</p>
+          <img src="https://picsum.photos/id/3/150/150" alt="Produktbilde">
+          <h3>Produktnavn 1</h3>
+          <p>1 999 kr</p>
           <p>⭐⭐⭐⭐⭐ 842 Reviews</p>
+          <button aria-label="Favoritter"><i class="fa-regular fa-heart"></i></button>
         </li>
         <li>
-          <img src="https://via.placeholder.com/200" alt="Produktbilde">
-          <h3>Product Name</h3>
-          <p>Kr 1999</p>
+          <img src="https://picsum.photos/id/4/150/150" alt="Produktbilde">
+          <h3>Produktnavn 2</h3>
+          <p>1 999 kr</p>
           <p>⭐⭐⭐⭐⭐ 842 Reviews</p>
+          <button aria-label="Favoritter"><i class="fa-regular fa-heart"></i></button>
         </li>
         <li>
-          <img src="https://via.placeholder.com/200" alt="Produktbilde">
-          <h3>Product Name</h3>
-          <p>Kr 1999</p>
+          <img src="https://picsum.photos/id/5/150/150" alt="Produktbilde">
+          <h3>Produktnavn 3</h3>
+          <p>1 999 kr</p>
           <p>⭐⭐⭐⭐⭐ 842 Reviews</p>
+          <button aria-label="Favoritter"><i class="fa-regular fa-heart"></i></button>
+        </li>
+        <li>
+          <img src="https://picsum.photos/id/6/150/150" alt="Produktbilde">
+          <h3>Produktnavn 4</h3>
+          <p>1 999 kr</p>
+          <p>⭐⭐⭐⭐⭐ 842 Reviews</p>
+          <button aria-label="Favoritter"><i class="fa-regular fa-heart"></i></button>
+        </li>
+        <li>
+          <img src="https://picsum.photos/id/7/150/150" alt="Produktbilde">
+          <h3>Produktnavn 5</h3>
+          <p>1 999 kr</p>
+          <p>⭐⭐⭐⭐⭐ 842 Reviews</p>
+          <button aria-label="Favoritter"><i class="fa-regular fa-heart"></i></button>
+        </li>
+        <li>
+          <img src="https://picsum.photos/id/8/150/150" alt="Produktbilde">
+          <h3>Produktnavn 6</h3>
+          <p>1 999 kr</p>
+          <p>⭐⭐⭐⭐⭐ 842 Reviews</p>
+          <button aria-label="Favoritter"><i class="fa-regular fa-heart"></i></button>
         </li>
       </ul>
-      <a href="#">Se flere lignende produkter →</a>
     </section>
   </main>
 
   <footer>
-    <p>Kontakt oss: kontakt@nettbutikk.no</p>
-    <p>Adresse: B R A Veien 4, 1757 Halden</p>
+    <section>
+      <h4>Kontakt</h4>
+      <p>E-post: kontakt@nettbutikk.no</p>
+      <p>Adresse: B R A Veien 4, 1757 Halden</p>
+    </section>
+    <section>
+      <h4>Snarveier</h4>
+      <ul>
+        <li><a href="#">Produkter</a></li>
+        <li><a href="#">Kategorier</a></li>
+        <li><a href="#">Kontakt oss</a></li>
+      </ul>
+    </section>
+    <section>
+      <h4>Sosiale medier</h4>
+      <ul>
+        <li><button aria-label="Instagram"><i class="fa-brands fa-instagram"></i></button></li>
+        <li><button aria-label="Facebook"><i class="fa-brands fa-facebook"></i></button></li>
+        <li><button aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></button></li>
+        <li><button aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></button></li>
+      </ul>
+    </section>
   </footer>
 </body>
 </html>
