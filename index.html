@@ -10,33 +10,41 @@
   <link rel="stylesheet" href="ikoner/css/solid.css">
 </head>
 <body>
-  <header>
-    <nav class="header">
-      <span class="logo">Logo</span>
+  <header class="header">
+    <!-- Logo -->
+ 
+  
+    <!-- Navigasjonslenker -->
+    <nav>
       <ul class="nav-links">
-        <li><a href="#">Produkter</a></li>
-        <li><a href="#">Kategorier</a></li>
-        <li><a href="#">Kontakt oss</a></li>
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="Produktside.html">Produkter</a></li>
+        <li><a href="index.html#logo">Logo</a></li>
+        <li><a href="index.html#kategorier">Kategorier</a></li>
+        <li><a href="#footerkontakt">Kontakt oss</a></li>
       </ul>
-      <form class="search-cart">
-        <input type="text" placeholder="Søk her">
-        <button type="submit" aria-label="Søk"><i class="fa-solid fa-magnifying-glass"></i></button>
-        <button aria-label="Handlekurv"><i class="fa-solid fa-cart-shopping"></i></button>
-        <button aria-label="Brukerkonto"><i class="fa-solid fa-user"></i></button>
-        <button aria-label="Favoritter"><i class="fa-regular fa-heart"></i></button>
-      </form>
     </nav>
+  
+    <!-- Søkefelt og ikoner -->
+    <form class="search-cart" role="search">
+      <input type="text" placeholder="Søk her" aria-label="Søk">
+      <button type="submit" aria-label="Søk"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <button aria-label="Handlekurv"><i class="fa-solid fa-cart-shopping"></i></button>
+      <button aria-label="Brukerkonto"><i class="fa-solid fa-user"></i></button>
+      <button aria-label="Favoritter"><i class="fa-regular fa-heart"></i></button>
+    </form>
   </header>
   
   <main>
-    <section class="hero">
-      <h1>Et harum quidem rerum facilis est et expedita distinctio.</h1>
-      <p>Nam libero tempore, cum soluta nobis est eligendi optio.</p>
-      <button>Les mer</button>
-    </section>
-
+   <!-- Banner -->
+<section class="banner-grid" style="background-image: url('https://picsum.photos/id/1050/1920/600');">
+  <h1>Et harum quidem rerum facilis est et expedita distinctio.</h1>
+  <p>Nam libero tempore, cum soluta nobis est eligendi optio.</p>
+  <a href="#" class="banner-button">Les mer</a>
+</section>
     <section>
       <h2>Våre mest populære produkter</h2>
+      <p>Oppdag det beste av det beste</p>
       <ul class="filter-buttons">
         <li><button>New Product</button></li>
         <li><button>Special Price</button></li>
@@ -44,230 +52,144 @@
       </ul>
       <ul class="product-grid">
         <li class="product">
-          <img src="https://picsum.photos/id/1014/150/150" alt="Produkt 1">
+          <img src="https://picsum.photos/id/1014/350/350" alt="Produkt 1">
           <h3>Produktnavn 1</h3>
           <p>Kr 1999</p>
-          <p>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            842 Reviews
-          </p>
         </li>
         <li class="product">
-          <img src="https://picsum.photos/id/1014/150/150" alt="Produkt 2">
+          <img src="https://picsum.photos/id/1014/350/350" alt="Produkt 2">
           <h3>Produktnavn 2</h3>
-          <p>Kr 1799</p>
-          <p>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            734 Reviews
-          </p>
+          <p>Kr 1999</p>
         </li>
         <li class="product">
-          <img src="https://picsum.photos/id/1014/150/150" alt="Produkt 3">
+          <img src="https://picsum.photos/id/1014/350/350" alt="Produkt 3">
           <h3>Produktnavn 3</h3>
-          <p>Kr 1499</p>
-          <p>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            620 Reviews
-          </p>
+          <p>Kr 1999</p>
         </li>
         <li class="product">
-          <img src="https://picsum.photos/id/1014/150/150" alt="Produkt 4">
+          <img src="https://picsum.photos/id/1014/350/350" alt="Produkt 4">
           <h3>Produktnavn 4</h3>
-          <p>Kr 1899</p>
-          <p>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            910 Reviews
-          </p>
+          <p>Kr 1999</p>
         </li>
         <li class="product">
-          <img src="https://picsum.photos/id/1014/150/150" alt="Produkt 5">
+          <img src="https://picsum.photos/id/1014/350/350" alt="Produkt 5">
           <h3>Produktnavn 5</h3>
-          <p>Kr 1599</p>
-          <p>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            802 Reviews
-          </p>
+          <p>Kr 1999</p>
         </li>
         <li class="product">
-          <img src="https://picsum.photos/id/1014/150/150" alt="Produkt 6">
+          <img src="https://picsum.photos/id/1014/350/350" alt="Produkt 6">
           <h3>Produktnavn 6</h3>
-          <p>Kr 1699</p>
-          <p>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            450 Reviews
-          </p>
+          <p>Kr 1999</p>
         </li>
       </ul>
     </section>
     
     <section>
       <h2>Våre mest populære kategorier</h2>
+      <p>Oppdag det beste av det beste</p>
       <ul class="categories-grid">
-        <section>
-            <li>
-              <img src="https://picsum.photos/id/101/200/300" alt="Kategori 1">
-              <p>Kategori 1</p>
-            </li>
-            <li>
-              <img src="https://picsum.photos/id/102/200/300" alt="Kategori 2">
-              <p>Kategori 2</p>
-            </li>
-            <li>
-              <img src="https://picsum.photos/id/103/200/300" alt="Kategori 3">
-              <p>Kategori 3</p>
-            </li>
-            <li>
-              <img src="https://picsum.photos/id/104/200/300" alt="Kategori 4">
-              <p>Kategori 4</p>
-            </li>
-            <li>
-              <img src="https://picsum.photos/id/105/200/300" alt="Kategori 5">
-              <p>Kategori 5</p>
-            </li>
-            <li>
-              <img src="https://picsum.photos/id/106/200/300" alt="Kategori 6">
-              <p>Kategori 6</p>
-            </li>
-          </ul>
-        </section>
-        
-        <h2>Anmeldelser</h2>
-        <ul class="review-grid">
-          <li class="review">
-            <img src="https://picsum.photos/id/237/200/300" alt="Bilde av Rober Labrador">
-            <h3>Rober Labrador</h3>
-            <p>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-            </p>
-            <p>Nam libero tempore, cum soluta nobis...</p>
-          </li>
-          <li class="review">
-            <img src="https://picsum.photos/id/237/200/300" alt="Bilde av Anna Collie">
-            <h3>Anna Collie</h3>
-            <p>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-            </p>
-            <p>Optio cumque nihil impedit quo minus id...</p>
-          </li>
-          <li class="review">
-            <img src="https://picsum.photos/id/237/200/300" alt="Bilde av Max Beagle">
-            <h3>Max Beagle</h3>
-            <p>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-            </p>
-            <p>Duis aute irure dolor in reprehenderit...</p>
-          </li>
-          <li class="review">
-            <img src="https://picsum.photos/id/237/200/300" alt="Bilde av Luna Husky">
-            <h3>Luna Husky</h3>
-            <p>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-            </p>
-            <p>Excepteur sint occaecat cupidatat non proident...</p>
-          </li>
-        </ul>        
+        <li class="category" style="background-image: url('https://picsum.photos/id/1011/386/300');">
+          <p>Category 1</p>
+        </li>
+        <li class="category" style="background-image: url('https://picsum.photos/id/1012/386/300');">
+          <p>Category 2</p>
+        </li>
+        <li class="category" style="background-image: url('https://picsum.photos/id/1013/386/300');">
+          <p>Category 3</p>
+        </li>
+        <li class="category large" style="background-image: url('https://picsum.photos/id/1020/864/300');">
+          <p>Category 4</p>
+        </li>
+        <li class="category small" style="background-image: url('https://picsum.photos/id/1015/300/300');">
+          <p>Category 5</p>
+        </li>
+      </ul>
+    </section>
     
+<section>
+  <h2>Anmeldelser</h2>
+  <ul class="review-grid">
+    <li class="review">
+      <img src="https://picsum.photos/id/237/150/150" alt="Bilde av Robert Labrador">
+      <h3>Robert Labrador</h3>
+      <p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+      </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis...</p>
+    </li>
+    <li class="review">
+      <img src="https://picsum.photos/id/238/150/150" alt="Bilde av Anna Collie">
+      <h3>Anna Collie</h3>
+      <p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+      </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis...</p>
+    </li>
+    <li class="review">
+      <img src="https://picsum.photos/id/239/150/150" alt="Bilde av David Shepherd">
+      <h3>David Shepherd</h3>
+      <p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+      </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis...</p>
+    </li>
+    <li class="review">
+      <img src="https://picsum.photos/id/240/150/150" alt="Bilde av Emma Golden">
+      <h3>Emma Golden</h3>
+      <p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+      </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis...</p>
+    </li>
+  </ul>
+</section>
   </main>
-
   <footer>
-    <section>
-      <!-- Logo og ingress -->
-      <header>
-        <h3>Logo</h3>
-        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
-      </header>
+    <section class="footer-logo">
+      <h4>Logo</h4>
+      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
     </section>
-  
-    <section>
-      <!-- Kontaktinformasjon -->
-      <h4>Kontakt</h4>
-      <address>
-        <p><strong>Adresse:</strong> B R A Veien 4, 1757 Halden</p>
-        <p><strong>Telefon:</strong> 69 60 80 00</p>
-        <p><strong>E-post:</strong> <a href="mailto:halden@fro.no">halden@fro.no</a></p>
-        <p><strong>Åpningstider:</strong> Stenger 15:00</p>
-      </address>
-    </section>
-  
-    <section>
-      <!-- Snarveier -->
-      <h4>Snarveier</h4>
-      <nav>
+    <section class="footer-grid">
+      <section>
+        <h4>Kontakt</h4>
+        <p><i class="fa-solid fa-location-dot"></i> <strong>Adresse:</strong> B R A Veien 4, 1757 Halden</p>
+        <p><i class="fa-solid fa-phone"></i> <strong>Telefon:</strong> 69 60 80 00</p>
+        <p><i class="fa-solid fa-envelope"></i> <strong>E-post:</strong> <a href="mailto:halden@hiof.no">halden@hiof.no</a></p>
+        <p><i class="fa-solid fa-clock"></i> <strong>Åpningstider:</strong> Stenger 15:00</p>
+      </section>
+      <section>
+        <h4>Snarveier</h4>
         <ul>
           <li><a href="#">Produkter</a></li>
           <li><a href="#">Kategorier</a></li>
           <li><a href="#">Kontakt oss</a></li>
         </ul>
-      </nav>
-    </section>
-  
-    <section>
-      <!-- Sosiale medier -->
-      <h4>Sosiale medier</h4>
-      <nav>
-        <ul>
-          <li>
-            <button aria-label="Instagram">
-              <i class="fa-brands fa-instagram"></i>
-            </button>
-          </li>
-          <li>
-            <button aria-label="Facebook">
-              <i class="fa-brands fa-facebook"></i>
-            </button>
-          </li>
-          <li>
-            <button aria-label="LinkedIn">
-              <i class="fa-brands fa-linkedin"></i>
-            </button>
-          </li>
-          <li>
-            <button aria-label="Pinterest">
-              <i class="fa-brands fa-pinterest"></i>
-            </button>
-          </li>
+      </section>
+      <section>
+        <h4>Sosiale medier</h4>
+        <ul class="social-links">
+          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
         </ul>
-      </nav>
+      </section>
     </section>
   </footer>
 </body>

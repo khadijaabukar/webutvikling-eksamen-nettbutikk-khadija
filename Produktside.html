@@ -10,25 +10,28 @@
   <link rel="stylesheet" href="ikoner/css/solid.css">
 </head>
 <body>
-  <header>
+  <header class="header">
+    <!-- Logo -->
+  
+    <!-- Navigasjonslenker -->
     <nav>
-      <a href="index.html" class="logo">Logo</a>
-      <ul>
+      <ul class="nav-links">
         <li><a href="index.html">Hjem</a></li>
-        <li><a href="index.html#produkter">Produkter</a></li>
+        <li><a href="Produktside.html">Produkter</a></li>
+        <li><a href="index.html#logo">Logo</a></li>
         <li><a href="index.html#kategorier">Kategorier</a></li>
-        <li><a href="index.html#kontakt">Kontakt oss</a></li>
+        <li><a href="#footerkontakt">Kontakt oss</a></li>
       </ul>
-      <form>
-        <input type="text" placeholder="Søk her">
-        <button type="submit" aria-label="Søk"><i class="fa-solid fa-magnifying-glass"></i></button>
-        <button aria-label="Handlekurv"><i class="fa-solid fa-cart-shopping"></i></button>
-        <button aria-label="Brukerkonto"><i class="fa-solid fa-user"></i></button>
-        <button aria-label="Favoritter"><i class="fa-regular fa-heart"></i></button>
-      </form>
     </nav>
+    <!-- Søkefelt og ikoner -->
+    <form class="search-cart" role="search">
+      <input type="text" placeholder="Søk her" aria-label="Søk">
+      <button type="submit" aria-label="Søk"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <button aria-label="Handlekurv"><i class="fa-solid fa-cart-shopping"></i></button>
+      <button aria-label="Brukerkonto"><i class="fa-solid fa-user"></i></button>
+      <button aria-label="Favoritter"><i class="fa-regular fa-heart"></i></button>
+    </form>
   </header>
-
   <main>
     <!-- Brødsmulesti -->
     <nav aria-label="breadcrumb">
@@ -38,7 +41,6 @@
         <li aria-current="page">Produktnavn</li>
       </ol>
     </nav>
-
     <!-- Produktseksjon -->
     <section>
       <h2>Produktseksjon</h2>
@@ -155,29 +157,36 @@
       </ul>
     </section>
   </main>
-
   <footer>
-    <section>
-      <h4>Kontakt</h4>
-      <p>E-post: kontakt@nettbutikk.no</p>
-      <p>Adresse: B R A Veien 4, 1757 Halden</p>
+    <section class="footer-logo">
+      <h4>Logo</h4>
+      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
     </section>
-    <section>
-      <h4>Snarveier</h4>
-      <ul>
-        <li><a href="#">Produkter</a></li>
-        <li><a href="#">Kategorier</a></li>
-        <li><a href="#">Kontakt oss</a></li>
-      </ul>
-    </section>
-    <section>
-      <h4>Sosiale medier</h4>
-      <ul>
-        <li><button aria-label="Instagram"><i class="fa-brands fa-instagram"></i></button></li>
-        <li><button aria-label="Facebook"><i class="fa-brands fa-facebook"></i></button></li>
-        <li><button aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></button></li>
-        <li><button aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></button></li>
-      </ul>
+    <section class="footer-grid">
+      <section>
+        <h4>Kontakt</h4>
+        <p><i class="fa-solid fa-location-dot"></i> <strong>Adresse:</strong> B R A Veien 4, 1757 Halden</p>
+        <p><i class="fa-solid fa-phone"></i> <strong>Telefon:</strong> 69 60 80 00</p>
+        <p><i class="fa-solid fa-envelope"></i> <strong>E-post:</strong> <a href="mailto:halden@hiof.no">halden@hiof.no</a></p>
+        <p><i class="fa-solid fa-clock"></i> <strong>Åpningstider:</strong> Stenger 15:00</p>
+      </section>
+      <section>
+        <h4>Snarveier</h4>
+        <ul>
+          <li><a href="#">Produkter</a></li>
+          <li><a href="#">Kategorier</a></li>
+          <li><a href="#">Kontakt oss</a></li>
+        </ul>
+      </section>
+      <section>
+        <h4>Sosiale medier</h4>
+        <ul class="social-links">
+          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+        </ul>
+      </section>
     </section>
   </footer>
 </body>

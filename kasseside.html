@@ -10,80 +10,104 @@
   <link rel="stylesheet" href="ikoner/css/solid.css">
 </head>
 <body>
-  <header>
+  <header class="header">
+    <!-- Logo -->
+ 
+  
+    <!-- Navigasjonslenker -->
     <nav>
-      <a href="index.html" class="logo">Logo</a>
       <ul class="nav-links">
         <li><a href="index.html">Hjem</a></li>
-        <li><a href="index.html#produkter">Produkter</a></li>
+        <li><a href="Produktside.html">Produkter</a></li>
+        <li><a href="index.html#logo">Logo</a></li>
         <li><a href="index.html#kategorier">Kategorier</a></li>
-        <li><a href="index.html#kontakt">Kontakt oss</a></li>
+        <li><a href="#footerkontakt">Kontakt oss</a></li>
       </ul>
-      <form class="search-cart">
-        <input type="text" placeholder="Søk her">
-        <button type="submit" aria-label="Søk"><i class="fa-solid fa-magnifying-glass"></i></button>
-        <button aria-label="Handlekurv"><i class="fa-solid fa-cart-shopping"></i></button>
-        <button aria-label="Brukerkonto"><i class="fa-solid fa-user"></i></button>
-        <button aria-label="Favoritter"><i class="fa-regular fa-heart"></i></button>
-      </form>
     </nav>
+  
+    <!-- Søkefelt og ikoner -->
+    <form class="search-cart" role="search">
+      <input type="text" placeholder="Søk her" aria-label="Søk">
+      <button type="submit" aria-label="Søk"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <button aria-label="Handlekurv"><i class="fa-solid fa-cart-shopping"></i></button>
+      <button aria-label="Brukerkonto"><i class="fa-solid fa-user"></i></button>
+      <button aria-label="Favoritter"><i class="fa-regular fa-heart"></i></button>
+    </form>
   </header>
-
   <main>
     <h1>Kasse</h1>
-    
-    <!-- Handlekurv -->
+    <!--Handlekurven-->
     <section>
       <h2>1. Shoppingbagen din</h2>
       <ul class="shopping-bag">
-        <li>
+        <!-- Produkt 1 -->
+        <li class="shopping-item">
           <img src="https://picsum.photos/id/2/150/150" alt="Produktbilde">
-          <p>Produktnavn 1</p>
-          <p>Kr 1999</p>
-          <label for="size1">Størrelse:</label>
-          <select id="size1">
-            <option value="S">S</option>
-            <option value="M">M</option>
-            <option value="L">L</option>
-          </select>
-          <label for="quantity1">Antall:</label>
-          <input type="number" id="quantity1" value="1" min="1">
-          <button aria-label="Fjern produkt"><i class="fa-solid fa-trash"></i></button>
-          <button arial-label="Favoritter"><i class="fa-regular fa-heart"></i></button>
+          <section class="product-details">
+            <p class="product-name">Produktnavn 1</p>
+            <p>Kr 1999</p>
+            <p>Farge: beige</p>
+            <label for="size1">Størrelse:</label>
+            <select id="size1">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+            <label for="quantity1">Antall:</label>
+            <input type="number" id="quantity1" value="1" min="1">
+          </section>
+          <section class="product-actions">
+            <button aria-label="Fjern produkt"><i class="fa-solid fa-trash"></i></button>
+            <button aria-label="Favoritter"><i class="fa-regular fa-heart"></i></button>
+          </section>
         </li>
-        <li>
-          <img src="https://picsum.photos/id/2/150/150" alt="Produktbilde">
-          <p>Produktnavn 2</p>
-          <p>Kr 1599</p>
-          <label for="size2">Størrelse:</label>
-          <select id="size2">
-            <option value="S">S</option>
-            <option value="M">M</option>
-            <option value="L">L</option>
-          </select>
-          <label for="quantity2">Antall:</label>
-          <input type="number" id="quantity2" value="1" min="1">
-          <button aria-label="Fjern produkt"><i class="fa-solid fa-trash"></i></button>
-          <button arial-label="Favoritter"><i class="fa-regular fa-heart"></i></button>
+    
+        <!-- Produkt 2 -->
+        <li class="shopping-item">
+          <img src="https://picsum.photos/id/3/150/150" alt="Produktbilde">
+          <section class="product-details">
+            <p class="product-name">Produktnavn 2</p>
+            <p>Kr 1599</p>
+            <p>Farge: hvit</p>
+            <label for="size2">Størrelse:</label>
+            <select id="size2">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+            <label for="quantity2">Antall:</label>
+            <input type="number" id="quantity2" value="1" min="1">
+          </section>
+          <section class="product-actions">
+            <button aria-label="Fjern produkt"><i class="fa-solid fa-trash"></i></button>
+            <button aria-label="Favoritter"><i class="fa-regular fa-heart"></i></button>
+          </section>
         </li>
-        <li>
-          <img src="https://picsum.photos/id/2/150/150" alt="Produktbilde">
-          <p>Produktnavn 3</p>
-          <p>Kr 1799</p>
-          <label for="size3">Størrelse:</label>
-          <select id="size3">
-            <option value="S">S</option>
-            <option value="M">M</option>
-            <option value="L">L</option>
-          </select>
-          <label for="quantity3">Antall:</label>
-          <input type="number" id="quantity3" value="1" min="1">
-          <button aria-label="Fjern produkt"><i class="fa-solid fa-trash"></i></button>
-          <button arial-label="Favoritter"><i class="fa-regular fa-heart"></i></button>
+    
+        <!-- Produkt 3 -->
+        <li class="shopping-item">
+          <img src="https://picsum.photos/id/4/150/150" alt="Produktbilde">
+          <section class="product-details">
+            <p class="product-name">Produktnavn 3</p>
+            <p>Kr 1799</p>
+            <p>Farge: svart</p>
+            <label for="size3">Størrelse:</label>
+            <select id="size3">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+            <label for="quantity3">Antall:</label>
+            <input type="number" id="quantity3" value="1" min="1">
+          </section>
+          <section class="product-actions">
+            <button aria-label="Fjern produkt"><i class="fa-solid fa-trash"></i></button>
+            <button aria-label="Favoritter"><i class="fa-regular fa-heart"></i></button>
+          </section>
         </li>
       </ul>
     </section>
-
+    
     <!-- Personopplysninger -->
     <section>
       <h2>2. Dine opplysninger</h2>
@@ -118,37 +142,75 @@
     <section>
       <h2>3. Levering</h2>
       <form class="delivery-options">
-        <button type="button" aria-label="Express hjemlevering">
-          <i class="fa-solid fa-truck-fast"></i> Express hjemlevering (3-4 virkedager)
-        </button>
-        <br>
-        <button type="button" aria-label="Express pakke til utleveringssted">
-          <i class="fa-brands fa-dhl"></i> Express pakke til utleveringssted (1-3 virkedager)
-        </button>
-        <br>
-        <button type="button" aria-label="Standard hjemlevering">
-          <i class="fa-solid fa-box"></i> Standard hjemlevering (5-8 virkedager)
-        </button>
+        <label class="delivery-option">
+          <input type="radio" name="delivery" value="express-home">
+          <span>
+            <strong class="option-title"><i class="fa-solid fa-truck-fast"></i> Express Hjemlevering</strong>
+            <em class="option-time">3-4 Virkedager</em>
+            <p class="option-description">Bestill hverdag før 08:00* for levering neste arbeidsdag. Leveres hjem til deg før frokost mandag til lørdag. *For levering til postnummer 4000-7999 er leveringstiden 2 arbeidsdager, for postnummer 8000-9999 er leveringstiden 3 arbeidsdager.</p>
+            <strong class="option-price">59 kr</strong>
+          </span>
+        </label>
+    
+        <label class="delivery-option">
+          <input type="radio" name="delivery" value="express-pickup">
+          <span>
+            <strong class="option-title"><i class="fa-brands fa-dhl"></i> Express Pakke til utleveringssted</strong>
+            <em class="option-time">1-3 Virkedager</em>
+            <p class="option-description">Rask levering til ditt nærmeste utleveringssted. Passer perfekt for mindre pakker.</p>
+            <strong class="option-price">59 kr</strong>
+          </span>
+        </label>
+    
+        <label class="delivery-option">
+          <input type="radio" name="delivery" value="standard-home">
+          <span>
+            <strong class="option-title"><i class="fa-solid fa-box"></i> Standard Hjemlevering</strong>
+            <em class="option-time">5-8 Virkedager</em>
+            <p class="option-description">Leveres hjem til deg for frokost mandag til lørdag innen 4-7 hverdager.</p>
+            <strong class="option-price">Gratis</strong>
+          </span>
+        </label>
       </form>
-    </section>
+    </section>    
 
     <!-- Seksjon 4: Betaling -->
-    <section>
+    <section class="payment-section">
       <h2>4. Betaling</h2>
-      <form>
-        <label for="card-number">Kortnummer:</label>
-        <input type="text" id="card-number" required>
-        <i class="fa-solid fa-credit-card"></i>
+      <form class="payment-form">
+        <section class="full-width">
+          <label for="card-number">Kortnummer:</label>
+          <span class="input-with-icon">
+            <input type="text" id="card-number" placeholder="Kortnummer" required>
+            <i class="fa-solid fa-credit-card"></i>
+          </span>
+        </section>
     
-        <label for="expiry-date">Utløpsdato:</label>
-        <input type="text" id="expiry-date" placeholder="mm/åå" required>
-        <i class="fa-regular fa-calendar"></i>
+        <section class="payment-grid">
+          <section>
+            <label for="expiry-date">Utløpsdato:</label>
+            <span class="input-with-icon">
+              <input type="text" id="expiry-date" placeholder="mm/åå" required>
+              <i class="fa-regular fa-calendar"></i>
+            </span>
+          </section>
+          <section>
+            <label for="cvc">CVC/CVV:</label>
+            <input type="text" id="cvc" placeholder="CVC/CVV" required>
+          </section>
+        </section>
     
-        <label for="cvc">CVC/CVV:</label>
-        <input type="text" id="cvc" required>
+        <section class="total-price">
+          <p>Å betale inkl. mva.</p>
+          <strong>1 199 kr</strong>
+        </section>
     
-        <p>Å betale: <strong>1 199 kr</strong></p>
         <button type="submit">Fullfør kjøp</button>
+    
+        <p class="confirmation-text">
+          Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtalen dersom det foreligger uriktige eller ufullstendige opplysninger.
+        </p>
+    
         <label>
           <input type="checkbox" required> Jeg godtar vilkårene
         </label>
@@ -158,44 +220,37 @@
       </form>
     </section>    
   </main>
+
   <footer>
-    <section>
-      <h4>Kontakt</h4>
-      <p>E-post: kontakt@nettbutikk.no</p>
-      <p>Adresse: B R A Veien 4, 1757 Halden</p>
+    <section class="footer-logo">
+      <h4>Logo</h4>
+      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
     </section>
-    <section>
-      <h4>Snarveier</h4>
-      <ul>
-        <li><a href="#">Produkter</a></li>
-        <li><a href="#">Kategorier</a></li>
-        <li><a href="#">Kontakt oss</a></li>
-      </ul>
-    </section>
-    <section>
-      <h4>Sosiale medier</h4>
-      <ul>
-        <li>
-          <button aria-label="Instagram">
-            <i class="fa-brands fa-instagram"></i>
-          </button>
-        </li>
-        <li>
-          <button aria-label="Facebook">
-            <i class="fa-brands fa-facebook"></i>
-          </button>
-        </li>
-        <li>
-          <button aria-label="LinkedIn">
-            <i class="fa-brands fa-linkedin"></i>
-          </button>
-        </li>
-        <li>
-          <button aria-label="Pinterest">
-            <i class="fa-brands fa-pinterest"></i>
-          </button>
-        </li>
-      </ul>
+    <section class="footer-grid">
+      <section>
+        <h4>Kontakt</h4>
+        <p><i class="fa-solid fa-location-dot"></i> <strong>Adresse:</strong> B R A Veien 4, 1757 Halden</p>
+        <p><i class="fa-solid fa-phone"></i> <strong>Telefon:</strong> 69 60 80 00</p>
+        <p><i class="fa-solid fa-envelope"></i> <strong>E-post:</strong> <a href="mailto:halden@hiof.no">halden@hiof.no</a></p>
+        <p><i class="fa-solid fa-clock"></i> <strong>Åpningstider:</strong> Stenger 15:00</p>
+      </section>
+      <section>
+        <h4>Snarveier</h4>
+        <ul>
+          <li><a href="#">Produkter</a></li>
+          <li><a href="#">Kategorier</a></li>
+          <li><a href="#">Kontakt oss</a></li>
+        </ul>
+      </section>
+      <section>
+        <h4>Sosiale medier</h4>
+        <ul class="social-links">
+          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+        </ul>
+      </section>
     </section>
   </footer>
 </body>
