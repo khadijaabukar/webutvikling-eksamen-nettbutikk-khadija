@@ -10,10 +10,8 @@
   <link rel="stylesheet" href="ikoner/css/solid.css">
 </head>
 <body>
-  <header class="header">
-    <!-- Logo -->
-  
-    <!-- Navigasjonslenker -->
+  <!-- Header Section -->
+  <header>
     <nav>
       <ul class="nav-links">
         <li><a href="index.html">Hjem</a></li>
@@ -23,7 +21,6 @@
         <li><a href="#footerkontakt">Kontakt oss</a></li>
       </ul>
     </nav>
-    <!-- Søkefelt og ikoner -->
     <form class="search-cart" role="search">
       <input type="text" placeholder="Søk her" aria-label="Søk">
       <button type="submit" aria-label="Søk"><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -32,8 +29,10 @@
       <button aria-label="Favoritter"><i class="fa-regular fa-heart"></i></button>
     </form>
   </header>
+
+  <!-- Main Content Section -->
   <main>
-    <!-- Brødsmulesti -->
+    <!-- Breadcrumb Navigation -->
     <nav aria-label="breadcrumb">
       <ol>
         <li><a href="index.html">Hjem</a></li>
@@ -41,39 +40,35 @@
         <li aria-current="page">Produktnavn</li>
       </ol>
     </nav>
-    <!-- Produktseksjon -->
-    <section>
-      <h2>Produktseksjon</h2>
-      <ul>
-        <li>
-          <img src="https://picsum.photos/id/1011/150/150" alt="Produktbilde">
-          <h3>Produktnavn 1</h3>
-          <p>5 195 kr inkl. mva.</p>
-          <button aria-label="Favoritter"><i class="fa-regular fa-heart"></i></button>
-        </li>
-        <li>
-          <img src="https://picsum.photos/id/1011/150/150" alt="Produktbilde">
-          <h3>Produktnavn 2</h3>
-          <p>5 195 kr inkl. mva.</p>
-          <button aria-label="Favoritter"><i class="fa-regular fa-heart"></i></button>
-        </li>
-        <li>
-          <img src="https://picsum.photos/id/1011/150/150" alt="Produktbilde">
-          <h3>Produktnavn 3</h3>
-          <p>5 195 kr inkl. mva.</p>
-          <button aria-label="Favoritter"><i class="fa-regular fa-heart"></i></button>
-        </li>
-        <li>
-          <img src="https://picsum.photos/id/1011/150/150" alt="Produktbilde">
-          <h3>Produktnavn 4</h3>
-          <p>5 195 kr inkl. mva.</p>
-          <button aria-label="Favoritter"><i class="fa-regular fa-heart"></i></button>
-        </li>
-      </ul>
+
+    <!-- Product Section -->
+    <section class="product-section">
+      <aside class="product-images">
+        <img src="https://picsum.photos/id/1011/700/700" alt="Hovedbilde" class="main-image">
+        <ul class="thumbnail-grid">
+          <li><img src="https://picsum.photos/id/1012/160/160" alt="Miniatyrbilde 1"></li>
+          <li><img src="https://picsum.photos/id/1013/160/160" alt="Miniatyrbilde 2"></li>
+          <li><img src="https://picsum.photos/id/1014/160/160" alt="Miniatyrbilde 3"></li>
+        </ul>
+      </aside>
+      <article class="product-info">
+        <h1>Produktnavn</h1>
+        <a href="#">MERKENAVN</a>
+        <p>5 195 kr inkl. mva.</p>
+        <p>Farge: Beige</p>
+        <select aria-label="Velg størrelse">
+          <option>Velg størrelse</option>
+          <option>Small</option>
+          <option>Medium</option>
+          <option>Large</option>
+        </select>
+        <button><i class="fa-solid fa-cart-shopping"></i> Legg i handlekurv</button>
+        <button><i class="fa-regular fa-heart"></i></button>
+      </article>
     </section>
 
-    <!-- Lignende produkter -->
-    <section>
+    <!-- Related Products -->
+    <section class="related-products">
       <h2>Lignende produkter</h2>
       <ul class="related-products-grid">
         <li>
@@ -118,32 +113,6 @@
         <li>
           <img src="https://picsum.photos/id/1013/150/150" alt="Produktbilde 4">
           <h3>Productname 4</h3>
-          <p>1 999 kr</p>
-          <p>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            842 Reviews
-          </p>
-        </li>
-        <li>
-          <img src="https://picsum.photos/id/1013/150/150" alt="Produktbilde 5">
-          <h3>Productname 5</h3>
-          <p>1 999 kr</p>
-          <p>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            842 Reviews
-          </p>
-        </li>
-        <li>
-          <img src="https://picsum.photos/id/1013/150/150" alt="Produktbilde 6">
-          <h3>Produktnavn 6</h3>
           <p>1 999 kr</p>
           <p>
             <i class="fa-solid fa-star"></i>

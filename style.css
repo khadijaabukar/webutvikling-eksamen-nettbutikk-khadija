@@ -1,147 +1,146 @@
-/* Grunnleggende stiler */
-body {
-  font-family: Arial, sans-serif;
+
+* {
   margin: 0;
   padding: 0;
-  line-height: 1.5;
-  color: #333;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
-/* Navigasjon Header Global */
-.header {
+/* Header */
+.header-container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  background-color: #fff;
-  padding: 15px;
+  padding: 15px 0;
   border-bottom: 1px solid #ddd;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.header ul {
-align-content: left;
-}
-
-/*navigasjon styling */
 .nav-links {
   display: flex;
-  flex-direction: column;
-  align-items: left;
-  gap: 10px;
+  gap: 30px;
   list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: left;
+}
+
+.nav-links li {
+  font-size: 1rem;
 }
 
 .nav-links li a {
   text-decoration: none;
   color: #333;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-.search-cart {
+.nav-links li a:hover {
+  color: #000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.search-bar {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   gap: 10px;
-  margin-top: 10px;
 }
 
-.search-cart input {
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  flex: 1;
-}
-
-.search-cart button {
-  padding: 8px;
-  border: none;
-  background-color: #f4f4f4;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.search-cart button i {
+.search-bar input {
+  padding: 8px 15px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
   font-size: 1rem;
-  color: #333;
 }
 
+.search-bar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  list-style: none;
+}
+
+.user-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+/* Main Content */
 main {
-  padding: 15px;
+  margin-top: 20px;
 }
 
-/* Bannersseksjonen */
+/* Banner Section */
 .banner-grid {
   display: grid;
-  grid-template-rows: auto auto auto; /* En rad for hver tekstlinje og knapp */
-  justify-items: center; /* Sentrerer innhold horisontalt */
-  align-items: end; /* Plasserer innholdet nederst */
+  place-items: center;
   height: 400px;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  color: white;
   text-align: center;
-  padding: 20px;
+  color: white;
 }
 
-/* Hovedoverskrift */
-.banner-grid h1 {
+.banner-content h1 {
   font-size: 2.5rem;
-  margin: 0 0 10px;
+  margin-bottom: 10px;
 }
 
-/* Undertekst */
-.banner-grid p {
+.banner-content p {
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
 
-/* Knappestil */
 .banner-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  color: black;
-  text-decoration: none; /* Fjerner understrek */
   padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 1rem;
+  background: white;
+  color: black;
   font-weight: bold;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* Hover-effekt for knapp */
 .banner-button:hover {
-  background-color: black;
+  background: black;
   color: white;
 }
 
-
-
-
-/* Seksjon styling */
-section {
-  margin: 20px 0;
+/* Popular Products Section */
+.popular-products {
+  margin: 50px 0;
   text-align: center;
+}
+
+.popular-products h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 .filter-buttons {
   display: flex;
   justify-content: center;
+  gap: 10px;
   list-style: none;
   padding: 0;
-  margin: 10px 0;
-  gap: 10px;
+  margin: 20px 0;
 }
 
 .filter-buttons button {
@@ -149,12 +148,13 @@ section {
   border: 1px solid #333;
   background-color: transparent;
   cursor: pointer;
+  font-size: 1rem;
 }
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
   list-style: none;
   padding: 0;
   margin: 20px 0;
@@ -164,12 +164,14 @@ section {
   text-align: center;
   border: 1px solid #ddd;
   padding: 15px;
-  background-color: #fff;
+  border-radius: 10px;
+  background: #fff;
 }
 
 .product img {
   max-width: 100%;
   height: auto;
+  border-radius: 5px;
 }
 
 .product h3 {
@@ -182,28 +184,23 @@ section {
   color: #333;
 }
 
-
-/* Seksjonsdesign */
-section {
-  margin: 20px 0;
+/* Popular Categories Section */
+.popular-categories {
+  margin: 50px 0;
   text-align: center;
 }
 
-/* Grid for kategorier */
 .categories-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
   list-style: none;
   padding: 0;
-  margin: 0 auto;
-  max-width: 1200px;
+  margin-top: 20px;
 }
 
-/* Standard kategori */
 .category {
-  position: relative;
-  height: 300px;
+  height: 200px;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -212,76 +209,55 @@ section {
   color: white;
   font-size: 1.2rem;
   font-weight: bold;
-  border: 1px solid #ddd;
+  border-radius: 10px;
 }
 
-/* Store og små kort */
-.category.large {
-  grid-column: span 3;
-  max-width: 864px;
-  height: 300px;
+/* Reviews Section */
+.reviews {
+  margin: 50px 0;
 }
-
-.category.small {
-  grid-column: span 1;
-  max-width: 300px;
-  height: 300px;
-}
-
-/* Tekststil */
-.category p {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  margin: 0;
-}
-
 
 .review-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
   list-style: none;
   padding: 0;
-  justify-content: center;
 }
 
 .review {
-  max-width: 289px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 1rem;
   text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  background: #fff;
 }
 
 .review img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
-  margin-bottom: 0.5rem;
+  margin-bottom: 10px;
 }
 
 .review h3 {
-  font-size: 1.1rem;
-  margin: 0.5rem 0;
+  font-size: 1rem;
+  margin-bottom: 5px;
 }
 
 .review p {
-  margin: 0.5rem 0;
+  margin: 5px 0;
 }
 
 .review i {
-  color: #0a0a09;
+  color: #f5c518; /* Gold star color */
 }
 
-
+/* Footer */
 footer {
+  margin-top: 50px;
   background-color: #f9f9f9;
   padding: 20px;
-  color: #333;
-  font-size: 0.9rem;
 }
 
 .footer-logo {
@@ -297,7 +273,6 @@ footer {
 .footer-grid {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -309,7 +284,6 @@ footer {
 footer ul {
   list-style: none;
   padding: 0;
-  margin: 0;
 }
 
 footer ul li {
@@ -325,313 +299,12 @@ footer ul li a:hover {
   text-decoration: underline;
 }
 
-footer i {
-  margin-right: 10px;
-  color: #333;
-}
-
 .social-links {
   display: flex;
   gap: 10px;
 }
 
 .social-links i {
-  font-size: 1.5rem;
-}
-
-
-/* Handlekurvseksjonen */
-.shopping-bag {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-/* Produktkort */
-.shopping-item {
-  display: grid;
-  grid-template-columns: 150px 1fr auto; /* Bilde, produktinfo, handlinger */
-  gap: 20px; /* Avstand mellom kolonnene */
-  align-items: center; /* Vertikal justering */
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 15px;
-  background-color: #fff;
-}
-
-/* Bildet */
-.shopping-item img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-/* Produktdetaljer */
-.product-details {
-  display: flex;
-  flex-direction: column; /* Vertikal justering */
-  gap: 10px; /* Avstand mellom elementer */
-}
-
-.product-name {
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 5px;
-}
-
-/* Handlinger */
-.product-actions {
-  display: flex;
-  flex-direction: column; /* Vertikal layout */
-  align-items: center;
-  gap: 10px;
-}
-
-.product-actions button {
-  background: none;
-  border: none;
   font-size: 1.2rem;
   color: #333;
-  cursor: pointer;
-  transition: color 0.3s ease;
 }
-
-.product-actions button:hover {
-  color: #000;
-}
-
-/* Skjema: Dine opplysninger */
-.personal-info {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.personal-info label {
-  font-size: 0.9rem;
-  font-weight: bold;
-}
-
-.personal-info input,
-.personal-info select {
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 0.9rem;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.personal-info input#address,
-.personal-info input#email,
-.personal-info input#phone {
-  grid-column: span 2;
-}
-
-.personal-info input#postcode {
-  grid-column: 1;
-}
-
-.personal-info input#city {
-  grid-column: 2;
-}
-
-button[type="submit"] {
-  grid-column: span 2;
-  text-align: center;
-  background-color: #000;
-  color: #fff;
-  padding: 12px 0;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-button[type="submit"]:hover {
-  background-color: #333;
-}
-
-.cancel {
-  grid-column: span 2;
-  text-align: center;
-  margin-top: 10px;
-  text-decoration: none;
-  color: #000;
-  font-size: 1rem;
-}
-
-.cancel:hover {
-  text-decoration: underline;
-}
-
-h2 {
-  text-align: left;
-  margin-bottom: 20px;
-  font-weight: bold;
-}
-/* Levering-seksjonen */
-.delivery-options {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.delivery-option {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 15px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  cursor: pointer;
-}
-
-.delivery-option input[type="radio"] {
-  margin-top: 5px;
-  align-self: start;
-}
-
-.delivery-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  align-items: center;
-}
-
-.delivery-info {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.delivery-extra {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-}
-
-.option-title {
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-.option-time {
-  font-size: 0.9rem;
-  font-weight: bold;
-  color: #555;
-}
-
-.option-description {
-  font-size: 0.85rem;
-  color: #777;
-}
-
-.option-price {
-  font-size: 1rem;
-  font-weight: bold;
-  color: #000;
-}
-
-.delivery-extra i {
-  font-size: 1.2rem;
-  color: #000;
-}
-
-/* Betalingsseksjon */
-.payment-section {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 20px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.payment-form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.payment-form label {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.input-with-icon {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-}
-
-.input-with-icon input[type="text"] {
-  border: none;
-  flex: 1;
-}
-
-.input-with-icon i {
-  font-size: 1.2rem;
-  color: #777;
-}
-
-.payment-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-.payment-grid section {
-  display: flex;
-  flex-direction: column;
-}
-
-.total-price {
-  text-align: center;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #000;
-  margin-top: 10px;
-}
-
-.total-price strong {
-  font-size: 1.8rem;
-  font-weight: bolder;
-}
-
-.payment-form button {
-  width: 100%;
-  padding: 15px;
-  background-color: #000;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.payment-form .confirmation-text {
-  text-align: center;
-  font-size: 0.9rem;
-  color: #777;
-}
-
-.payment-form label input[type="checkbox"] {
-  margin-right: 10px;
-}
-
-
-
